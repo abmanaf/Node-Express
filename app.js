@@ -11,7 +11,8 @@ var app = express();
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 const mongoDB =
-  "mongodb+srv://abdulmanafaliu414:ButanE90@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority";
+  "mongodb+srv://abdulmanafaliu414:ButanE90@cluster0.cq5vh8t.mongodb.net/?retryWrites=true&w=majority";
+//"mongodb+srv://abdulmanafaliu414:ButanE90@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority";
 
 main().catch((err) => console.log(err));
 async function main() {
