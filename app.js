@@ -4,9 +4,10 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
-var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-const wiki = require("./routes/wiki.js");
+var indexRouter = require("./routes/index"); //Import routes for "index" area of site
+var usersRouter = require("./routes/users"); //Import routes for "users" area of site
+var catalogRouter = require("./routes/catalog"); //Import routes for "catalog" area of site
+//const wiki = require("./routes/catalog.js");
 
 var app = express();
 const mongoose = require("mongoose");
@@ -32,7 +33,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use("/wiki", wiki);
+app.use("/catalog", catalogRouter);
+//==app.use("/wiki", wiki);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
