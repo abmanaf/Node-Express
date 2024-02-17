@@ -10,10 +10,5 @@ router.get("/", function (req, res, next) {
 router.get("/cool", function (req, res, next) {
   res.send("You're so cool");
 });
-/*
-router.get("/bet", function (req, res, next) {
-  res.send("I have stop betting");
-});
-*/
 
 module.exports = router;
