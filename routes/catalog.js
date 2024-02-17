@@ -7,8 +7,6 @@ const author_controller = require("../controllers/authorController");
 const genre_controller = require("../controllers/genreController");
 const book_instance_controller = require("../controllers/bookinstanceController");
 
-/// BOOK ROUTES ///
-
 // GET catalog home page.
 router.get("/", function (req, res) {
   res.send(book_controller.index);
